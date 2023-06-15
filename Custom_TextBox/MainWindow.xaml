@@ -1,0 +1,31 @@
+﻿<Window x:Class="Custom_TextBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Custom_TextBox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800" Background="#2c2b57">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.Row="0" Margin="30">
+            <TextBox Style="{StaticResource TextBox1}" Text="Username" Foreground="Gray" GotFocus="TextBox_GotFocus"/>
+            <TextBox Style="{StaticResource TextBox2}" Text="Password" Foreground="Gray" GotFocus="TextBox_GotFocus"/>
+            <TextBox Style="{StaticResource TextBox3}"/>
+            <TextBox Style="{StaticResource TextBox3}"/>
+            <TextBox Style="{StaticResource TextBox6}" Text="RJ Code" Foreground="Gray" GotFocus="TextBox_GotFocus"/>
+            <PasswordBox Style="{StaticResource PasswordBox2}"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <TextBox Style="{StaticResource TextBox4}" Text="admin" Foreground="Gray" GotFocus="TextBox_GotFocus"/>
+            <PasswordBox Style="{StaticResource PasswordBox3}"/>
+            <TextBox Style="{StaticResource TextBox5}" Text="TextBox Multiline" Foreground="#8281ee" GotFocus="TextBox_GotFocus"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
